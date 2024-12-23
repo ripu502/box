@@ -1,0 +1,38 @@
+{
+  "msg": "Sample Custom Claim SPI: get claims for user nbruce",
+  "status": "success",
+  "clientRespContext": [
+    {
+      "key": "string",
+      "value": "string"
+    }
+  ],
+  "claimListMva": {
+    "x-mva-allowed-operations": [
+      "buy",
+      "sell"
+    ],
+    "x-mva-roles": [
+      "Purchaser",
+      "Seller",
+      "Approver"
+    ],
+    "x-mva-authority": [
+      "level500"
+    ]
+  },
+  "claimListSva": {
+    "x-sva-authority": "level500",
+    "x-sva-allowed-operations": "buy, sell",
+    "x-sva-roles": "Purchaser, Seller, Approver"
+  },
+  "claimListRaw": [
+    "\"customSva\": \"custom1\"",
+    "\"customMva\": [\"custom1\",\"custom2\"]",
+    "\"habilitations\": [    {      \"ou\": \"A-0000001312\",      \"libelle\": \"BULK_APPROVALS\",      \"roles\": []    },    {      \"ou\": \"A-0000001170\",      \"libelle\": \"ITG_MyPassword\",      \"roles\": [        {          \"cn\": \"D-0000002524\",          \"libelle\": \"Support\"        }      ]    },    {      \"ou\": \"A-000009999\",      \"libelle\": \"A-000009999\",      \"roles\": [        {          \"cn\": \"D-000009999\",          \"libelle\": \"D-000009999\"        }      ]    }  ]"
+  ],
+  "claimListRawNs": {
+    "some more" : "yee",
+    "ripu": "daman"
+  }
+}
